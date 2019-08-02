@@ -1,6 +1,7 @@
 /**
  * Example - InterestRates:
  * Variable declaration / Math.random 
+ * page 129
  * 
  * @author:		Oliver Zott
  * @date: 		02.08.2019

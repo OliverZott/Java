@@ -18,7 +18,9 @@ SimpleYearMonthParser		witch Fall-Through				S.179
 WhatsYourNumber2			if / break						S.192
 WhatsYourNumber3			if / continue					S.194
 FriendlyGreeter				Methoden / return				S.204
-EndlessRecursion			Rekursion						S.220
+RecursiveMethod				Rekursion						S.219
+Scope						Gültigkeitsbereich 				S.216
+
 
 projects Point 				OOP first try 					S.230ish
 ZZZZZnake					Snake-Spiel						S.247

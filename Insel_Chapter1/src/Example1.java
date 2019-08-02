@@ -22,6 +22,11 @@ public class Example1 {
 	
 	public static void main( String[] args) {
 		ausgabe( 4 );
+		System.out.println( "test" );								// "out" is object, "println" is respective method
+		System.out.println( true );
+		System.out.println(-23235 );
+		System.err.print("Error Ausgabe");							// erscheint irgendwo in Ausgabe?!?!?!
+		System.out.print(Byte.MIN_VALUE);
 	}
 
 }
