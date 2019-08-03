@@ -46,6 +46,7 @@ public class FriendlyGreeter {						// class declaration
 	public static void main(String[] args) {
 		greet();
 		sqrtprint(-2);
+		sqrtprint(7);
 		double a = largeRandom();
 		System.out.println(a);
 		String s = posOrNeg(-4);
