@@ -22,7 +22,7 @@ RecursiveMethod				Rekursion						S.219
 Scope						Gültigkeitsbereich 				S.216
 
 
-projects Point 				OOP first try 					S.230ish
+PointTest 					OOP first try 					S.230ish
 ZZZZZnake					Snake-Spiel						S.247
 
 DatePrinter					Paket Dekleration und Aufruf	S.252
