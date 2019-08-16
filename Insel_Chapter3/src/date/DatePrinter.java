@@ -12,7 +12,7 @@
  * @version:	1.0
  */
 
-package date;		// why or why not?
+package date;		// page 252
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;	

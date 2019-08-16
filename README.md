@@ -10,6 +10,8 @@ help:		>java -help
 Bsp. Buch:
 ------------------------------------------------------------------------------------------
 Squares.java				first ex. class, method			S.84 
+
+# Chapter 2: Imperative
 InterestRates.java 			Variablen DeklerationS			S.129
 Conversation.java			Input 							S.131 	
 WhatsYourNumber				if / random						S.166
@@ -21,21 +23,27 @@ FriendlyGreeter				Methoden / return				S.204
 RecursiveMethod				Rekursion						S.219
 Scope						Gültigkeitsbereich 				S.216
 
-
-PointTest 					OOP first try 					S.230ish
+# Chapter 3: OOP
+PointTest 					OOP first try 					S.230/238-242
 ZZZZZnake					Snake-Spiel						S.247
-
 DatePrinter					Paket Dekleration und Aufruf	S.252
-DatePrinter_test			- // -
+DatePrinter_Test			- // -
 DrawPlayerAndSnake			Pakete / Classen & Methoden		S.262
+JavaIsAlwaysCallByValue		Call-By-Value / final 			S.265
+
+# Chapter 4: Arrays
+PrintTheAverage				declaration / initiation 		S.272
 
 
 
 
-Übungen:
+# Examples
+fileIO						file input-output / null / try-catch / wrapping
+
+
+# Übungen:
 ------------------------------------------------------------------------------------------
 add ZZZZZnake 				--> erweitern !!!
-
 
 Andere Beispiele:
 ------------------------------------------------------------------------------------------

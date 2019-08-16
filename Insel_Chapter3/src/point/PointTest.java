@@ -1,6 +1,6 @@
 /**
  * Example - Import packages (java.awt.point)
- * page 230-235
+ * page 230 / 239-242
  * 
  * @author:		Oliver Zott
  * @date:		10.08.2019
@@ -23,12 +23,12 @@ public class PointTest {
 
 	public static void main(String[] args) {
 		
-		// int q = new java.awt.Point();						// wrong typs int - point
+		// int q = new java.awt.Point();						// wrong type (page 237)
 		java.awt.Point p = new java.awt.Point();				// has to be declared INSIDE main-method
 		
 		/* Example 1: */
-		p.x = 1;
-		p.y = 2 + p.x;
+		p.x = 1;												// .x is object-variable!	(page238)
+		p.y = 2 + p.x;											// p is reference-variable to "new" object (page 237)
 							
 		Point a = new Point();									// works ONLY if import-class outside class!
 		Point b = a;
