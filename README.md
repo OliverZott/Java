@@ -32,9 +32,11 @@ DrawPlayerAndSnake			Pakete / Classen & Methoden		S.262
 JavaIsAlwaysCallByValue		Call-By-Value / final 			S.265
 
 # Chapter 4: Arrays
-PrintTheAverage				declaration / initiation 		S.272
-
-
+PrintTheAverage				declaration / initiation 		S.272/274/277
+Avg1						parameter / Arrays.toString		S.277
+Avg2						for-loop with array				S.279
+NonPrimitiveArray			non primitive array object		S.281
+FivePlayers					Arrays.asList().contains()		S.282
 
 
 # Examples
