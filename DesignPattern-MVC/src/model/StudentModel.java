@@ -1,3 +1,15 @@
+/**
+ * MVC Example 
+ * 
+ * source: https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
+ * 
+ * - Model mustn't have relationship to other classes!
+ * - should always be usable in other projects without changes!
+ * 
+ * @author Oliver Zott
+ * @version 1.0 / 27.08.2019
+ */
+
 package model;
 
 public class StudentModel {
