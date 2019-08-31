@@ -38,9 +38,22 @@ Avg2						for-loop with array				S.279
 NonPrimitiveArray			non primitive array object		S.281
 FivePlayers					Arrays.asList().contains()		S.282
 
+# Chapter 5: 
 
 # Examples
 fileIO						file input-output / null / try-catch / wrapping
+
+
+# Design Pattern
+https://www.tutorialspoint.com/design_pattern/index.htm
+MVC							Model View Controller			
+
+
+
+
+
+
+
 
 
 # Übungen:
