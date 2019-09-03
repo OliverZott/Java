@@ -23,7 +23,7 @@ public class CatchNumberFormatException {
 			System.err.printf("%s can not be converted to integer! %n", stringToConvert); 	// %n for line break in printf
 		}
 		
-		System.out.printf(" Continueing script: '%s'. %n", vat);
+		System.out.printf(" Continuing script: '%s'. %n", vat);
 		
 	}
 }
