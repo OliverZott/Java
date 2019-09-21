@@ -4,6 +4,9 @@
  * - null		
  * - wrapping
  * - try / catch (Chapter 
+ * - FileReader: Abstract class for reading character streams
+ * - InputStream: Abstract class is the superclass of all classes representing an input stream of bytes. 
+ * 
  * 
  * source:		Tutorial: https://caveofprogramming.com/java/java-file-reading-and-writing-files-in-java.html
  * 				NIO / IO: http://tutorials.jenkov.com/java-nio/nio-vs-io.html

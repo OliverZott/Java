@@ -10,7 +10,11 @@ package Factory_Ex1;
 public class ShapeFactory {
 	
 	// getShape method to get object of type shape
+	// Advantage of factory method: 
+	// - can return null
+	// - can call create from childclass
 	public Shape getShape( String shapeType ) {
+		
 		if ( shapeType == null ) {
 			return null;
 		}

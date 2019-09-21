@@ -9,7 +9,9 @@ public class Playground {
 		Player p = new Player();
 		p.name = "Zwugu";
 		p.item = "Killer Pony";
-
+		
+		System.out.println(p.item);
+		
 	}
 
 }
