@@ -1,4 +1,5 @@
 
+
 public class Varargs {
 	
 	
@@ -18,6 +19,7 @@ public class Varargs {
 	}
 	
 	
+	// method with variable arguments
 	static double avg_varargs( double... array ) {
 		
 		double sum = 0;

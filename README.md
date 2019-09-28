@@ -39,6 +39,19 @@ NonPrimitiveArray			non primitive array object		S.281
 FivePlayers					Arrays.asList().contains()		S.282
 
 # Chapter 5: 
+IsNumeric					length() charAT()				S.327
+UppercaseWriter												S.329
+
+# Chapter 6:
+game:
+Player & Playground			Class declaration / OOP			S.398
+PlayerData & PlayerFunction	Procedural examples				S.403
+privacy:
+Password					private							S.410
+
+
+# Chapter 8:
+
 
 # Examples
 fileIO						file input-output / null / try-catch / wrapping

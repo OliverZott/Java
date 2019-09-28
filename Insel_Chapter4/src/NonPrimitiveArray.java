@@ -25,7 +25,7 @@ public class NonPrimitiveArray {
 		for ( String word: validInputs ) {
 			if ( word.equals( input ) ) {
 				found = true;
-				System.out.println("Richtiges Wort");
+				System.out.print("Richtiges Wort");
 				break;
 			}
 		}

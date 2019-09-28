@@ -1,6 +1,7 @@
-/**
+/** 
+ * Example: Character-Class
  * IsNumeric - test if string only integer
- * page 327
+ * (page 327)
  * 
  * @author Oliver Zott
  *
@@ -36,7 +37,7 @@ public class IsNumeric {
 		
 		String test_str = "21563478";
 		String test_str2 = "234fg1563478";
-		String test_str3 = "";
+		String test_str3 = "2";
 		
 		System.out.println("Tested string is numeric?: " +  isNumeric(test_str3));
 	}
