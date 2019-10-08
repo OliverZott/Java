@@ -11,8 +11,8 @@ package game;
 
 public class Player {
 	
-	String name = "";	// "" to avoid "null" if not instantiated 
-	String item = "";
+	private String name = "";	// "" to avoid "null" if not instantiated 
+	private String item = "";
 	
 	void setPlayer( String nam, String it ) {
 		this.name = nam;
@@ -27,6 +27,32 @@ public class Player {
 		return this;
 	}
 	
+	
+	/* ---------------------------------------------------------------------------------
+	 * alternative Setter / Getter methods (like in the book p.414)
+	 */
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName( String name ) {
+		if ( name != null && !name.trim().isEmpty() ) {
+			this.name = name;
+		}
+	}
+	
+	public String getItem() {
+		return item;  // 'this' not necessary
+	}
+	
+	public void setItem( String item ) {
+		if (name != null && !name.trim().isEmpty() ) {
+			this.item = item;
+		}
+	}
+
+	
 	void carry( String newItem ) {		// NOT static... calls object-variable (its an object-method)
 		if ( newItem != null && newItem.length() != 0 ) {
 			item += newItem + ";";  	// "item" is a 'nonstatic field' --> so method not static!
@@ -36,7 +62,7 @@ public class Player {
 	boolean doesCarry( String anItem ) {
 		if ( anItem == null )
 			return false;
-		return ( ";" + item).contains( ";" + anItem + ";" );
+		return ( ";" + this.item).contains( ";" + anItem + ";" );
 	}
 
 }

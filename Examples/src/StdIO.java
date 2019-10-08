@@ -8,6 +8,9 @@
  * -  Parser: Integer.parseInt(), Double.parseDouble()
  * 
  * source:	- https://www.geeksforgeeks.org/ways-to-read-input-from-console-in-java/
+ * 			- https://www.geeksforgeeks.org/difference-between-scanner-and-bufferreader-class-in-java/
+ * 			- https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader
+ * 		
  * 	
  * TODO:	- Scanner class always scans as string...wtf ?
  * 
