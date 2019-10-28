@@ -28,6 +28,16 @@ public class Player {
 	}
 	
 	
+	/* Constructor */
+	
+	public Player () { }	// Constructor without parameters
+	
+	public Player ( Player player ) { 	// Copy-Constructor
+		name = player.name;
+		item = player.item;
+	}
+	
+	
 	/* ---------------------------------------------------------------------------------
 	 * alternative Setter / Getter methods (like in the book p.414)
 	 */

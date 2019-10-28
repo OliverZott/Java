@@ -3,7 +3,7 @@ package blatt1_example2;
 import java.time.LocalDateTime;
 
 
-public class Flight {
+public class Flight2 {
 
 	/* Class Attributes and Setter/Getter methods */
 	private String id = "";
@@ -12,8 +12,8 @@ public class Flight {
 	private String Abflugsort = "";
 	private String Destination = "";
 	private LocalDateTime date_time; 
-	private Pilot pilot;
-	private Pilot fo;
+	private Pilot2 pilot;
+	private Pilot2 fo;
 	
 	public LocalDateTime pilot_rest_time = pilot.getRest_time();
 	public LocalDateTime fo_rest_time = fo.getRest_time();
@@ -59,18 +59,18 @@ public class Flight {
 		Destination = destination;
 	}
 
-	public Pilot getPilot_id() {
+	public Pilot2 getPilot_id() {
 		return pilot;
 	}
 
-	public void setPilot( Pilot pilot) {
+	public void setPilot( Pilot2 pilot) {
 		if (pilot.restTimeCheck(pilot_rest_time, date_time)) {
 			this.pilot = pilot;
 		} else {
 			System.out.println("Error... rest time!");
 		}
 	}
-	public void setFo( Pilot fo) {
+	public void setFo( Pilot2 fo) {
 		if (fo.restTimeCheck(fo_rest_time, date_time)) {
 			this.fo = fo;
 		} else {
@@ -78,7 +78,7 @@ public class Flight {
 		}
 	}
 
-	public Pilot getFo() {
+	public Pilot2 getFo() {
 		return fo;
 	}
 
