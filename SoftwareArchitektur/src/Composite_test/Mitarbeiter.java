@@ -5,6 +5,7 @@
  * 
  * HINTS: 
  * https://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html
+ * https://www.tutorialspoint.com/importance-of-override-annotation-in-java
  * 
  * @Author Oliver Zott
  * @Date 25.10.2019
@@ -42,4 +43,8 @@ public abstract class Mitarbeiter {
 	}
 		
 
+	/* abstract method - getMitarbeiteranzahl */
+	public abstract int getMitarbeiteranzahl();
+	public abstract void showMitarbeiter(String abstand);
+	
 }

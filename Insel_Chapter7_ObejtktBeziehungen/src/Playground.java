@@ -13,7 +13,10 @@ public class Playground {
 		tower.addPlayer(Leni);
 		
 		System.out.println(Olli.room);
+		System.out.println("Call listPlayers-method:");
 		tower.listPlayers();
+		
+		
 		System.out.println(Olli.getName());
 		
 		// tower.player = null;
