@@ -12,7 +12,7 @@
  */
 
 
-package Composite_test;
+package composite_Example;
 
 
 public abstract class Mitarbeiter {

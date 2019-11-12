@@ -1,4 +1,4 @@
-package Composite_test;
+package composite_Example;
 
 import java.util.ArrayList;
 
