@@ -1,6 +1,6 @@
 package zug_beispiel;
 
-/** Abstract class generalizes classes "Wagon" and "Lokomotive"
+/** Abstract class to generalize classes "Wagon" and "Lokomotive"
  * 
  * Provides basic attributes, constructor, setters&getters
  * 
@@ -12,33 +12,24 @@ package zug_beispiel;
 
 public abstract class Schienenfahrzeug {
 	
-	/* Attributes (inherited by "Zug" and "Wagon"*/
+	
+	// Attributes
 	private double leergewicht;
 	private double laenge;
-	
 	private String typenbezeichnung;
 	private String hersteller;
-	private int baujahr;  						// use date ???  short int ???
+	private int baujahr;  						
 	private String seriennummer;				// UNIQUE ! ???
-	
 	private int passagiere_max;
 	private double zuladungsgewicht_max;
-	
 	private boolean verwendung;  // used to ensure unique use 
 	
-	private String type = "";  // to differentiate between "Wagon" and "Lokomotive"
 	
-	
-	
-	/**
-	 *  Constructors
-	 *  
-	 *  standard constructor for "Zug" child-class
-	 *  explicit constructor for "Wagon" and "Lokomotive" child-classes
-	 */
+	// Constructors
 	public Schienenfahrzeug() {
 		
 	}
+
 	public Schienenfahrzeug(double leergewicht, double laenge, String typenbezeichnung, String hersteller, int baujahr,
 			String seriennummer, int passagiere, double zuladungsgewicht) {
 		super();
@@ -53,8 +44,7 @@ public abstract class Schienenfahrzeug {
 	}
 
 
-	
-	/* Setter Getter methods */
+	// Setter Getter methods 
 	public double getLeergewicht() {
 		return leergewicht;
 	}
@@ -109,22 +99,19 @@ public abstract class Schienenfahrzeug {
 	public void setVerwendung(boolean verwendung) {
 		this.verwendung = verwendung;
 	}
-	public String getType() {
-		return type;
-	}
 
 	
-	/** abstract method for "sort of" Composite-Pattern to make sure implementation 
+	/** abstract method to ensure implementation 
+	 * Methods overridden in child-classes
 	 * 
 	 * Idea: 	a locomotive is a train
 	 * 			a wagon is no train
 	 * 			a wagon + a locomotive is a train
-	 * 			a train composed by other trains is a train
-	 * 
-	 * Methods overridden in child-classes
+	 * 			a train composed by other trains is a train 
 	 * */
 	
 	public abstract double getZugkraft();
 	public abstract void printZug();
-	
+	public abstract String getType();
 }
+

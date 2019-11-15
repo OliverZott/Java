@@ -10,14 +10,15 @@ package zug_beispiel;
  */
 
 
+
 public class Lokomotive extends Schienenfahrzeug{
 	
 	public static final String type = "Lokomotive";
 
-	private double zugkraft;  			// weight to pull besides own wieght
+	private double zugkraft;  			// weight to pull besides own weight
+		
 	
-	
-	/* Constructor */
+	// Constructor 
 	public Lokomotive(double leergewicht, double laenge, String typenbezeichnung, String hersteller, int baujahr,
 			String seriennummer, int passagiere, double zuladungsgewicht, double zugkraft) {
 		super(leergewicht, laenge, typenbezeichnung, hersteller, baujahr, seriennummer, passagiere, zuladungsgewicht);
@@ -25,14 +26,13 @@ public class Lokomotive extends Schienenfahrzeug{
 	}
 
 	
-	/* Getter and Setter methods */
+	// Getter and Setter methods
 	public void setZugrakft(double zugrakft) {
 		this.zugkraft = zugrakft;
 	}
 	
 	
-	/** Overridden abstract getter-methods 
-	 */
+	// Methods 
 	@Override
 	public double getZugkraft() {
 		return zugkraft + getLeergewicht();   // for calculation if train can be moved by locomotives
@@ -46,6 +46,5 @@ public class Lokomotive extends Schienenfahrzeug{
 	public void printZug() {
 		System.out.println("Fahrzeug: " + getTypenbezeichnung() + ", Typ: " + getType());
 	}
-	
 	
 }
