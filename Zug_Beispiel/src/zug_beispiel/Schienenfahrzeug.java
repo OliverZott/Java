@@ -99,7 +99,7 @@ public abstract class Schienenfahrzeug {
 	public void setVerwendung(boolean verwendung) {
 		this.verwendung = verwendung;
 	}
-
+	
 	
 	/** abstract method to ensure implementation 
 	 * Methods overridden in child-classes

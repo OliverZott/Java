@@ -26,8 +26,15 @@ import java.util.HashSet;
 public class Zug extends Schienenfahrzeug {
 	
 	public static final String type = "Zug";
+	final int passenger_weigeht = 75; 
 
-	// Constructor
+	
+	/** 
+	 * Constructor
+	 * 
+	 * Ensure that every train consists at least of one locomotive
+	 * @param lokomotive
+	 */
 	public Zug(Lokomotive lokomotive) {
 		this.addSchiennfahrzeug(lokomotive);
 	}
@@ -131,7 +138,8 @@ public class Zug extends Schienenfahrzeug {
 		return passagiere_max;
 	}
 	
-	// maximum amount of payload 
+	/** maximum amount of payload 
+	 */
 	public double getZuladungsgewicht_max() {
 		int zuladung_max = 0;
 		for (Schienenfahrzeug fahrzeug : liste) {
@@ -140,12 +148,18 @@ public class Zug extends Schienenfahrzeug {
 		return zuladung_max;
 	}
 	
-	// maximum amount of payload including passengers (assumed 75kg weight each) 
+	/** maximum amount of payload including passengers (assumed 75kg weight each) 
+	 * 
+	 * @return double
+	 */
 	public double getZuladung_max() {
-		return getZuladungsgewicht_max() + getPassagiere_max()*75;
+		return getZuladungsgewicht_max() + getPassagiere_max()*passenger_weigeht;
 	}
 	
-	// maximum weight overall
+	/** maximum weight overall (payload + passengers + empty-weight)
+	 * 
+	 * @return double
+	 */
 	public double getGewicht_max() {
 		return getZuladung_max() + getLeergewicht();
 	}
@@ -160,7 +174,11 @@ public class Zug extends Schienenfahrzeug {
 		return laenge;
 	}
 
-	// check if locomotives can pull the train
+	/** check if locomotives can pull the train
+	 * ignores empty weight of train-elements (wagons, locomotives, other trains)
+	 * 
+	 * @return boolean
+	 */
 	public boolean fahrfaehig() {
 		boolean canPull = false;
 		double maxgewicht = getZuladung_max();
@@ -183,6 +201,7 @@ public class Zug extends Schienenfahrzeug {
 	public int getSchaffner_max() {
 		int passagiere_max = getPassagiere_max();
 		int countSchaffner = 0;
+		
 		if (passagiere_max > 50) {							// 1 "Schaffner" per 50 maximum passengers
 			countSchaffner = (int) passagiere_max / 50;
 		} else if (passagiere_max > 0){						// 1 "Schaffner" if > 1 maximum passenger
@@ -192,6 +211,6 @@ public class Zug extends Schienenfahrzeug {
 		
 	}
 	
-
+	
 	
 }
