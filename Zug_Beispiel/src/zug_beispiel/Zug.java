@@ -4,18 +4,18 @@ import java.util.HashSet;
 
 /** Class Zug 
  * 
- * Zug which consists of "Schienenfahrzeug" objects
+ * Zug consists of "Schienenfahrzeug" objects
  * Lokomotiven  1..*   
  * Wagon  0..* 
- * 
- * add builder function to: ensure 1..* lokomotive exists / if locomotives can pull  !!!
- * implement train identification ?????????????????????????????????????
+ * (can consist of other trains as well)
  * 
  * Provides:
  * 	- HashSets to store "Wagon", "Lokomotive" and "Zug" objects
  * 	- Methods to add / remove "Wagon", "Lokomotive" and "Zug" objects
  * 	- Methods to get various information about the train
  *  - Method to check traction is enough
+ *  
+ * @TODO Idea(not implemented yet): add builder/factory class (check serial number uniqueness / create types)
  * 
  * @author Oliver Zott
  * @version 1.1
@@ -27,7 +27,10 @@ public class Zug extends Schienenfahrzeug {
 	
 	public static final String type = "Zug";
 	final int passenger_weigeht = 75; 
-
+	
+	// HashSet to store elements of type Lokomotive and Wagon or Zug (elements not sorted/ordered) 
+	private HashSet<Schienenfahrzeug> liste = new HashSet<Schienenfahrzeug>();
+	
 	
 	/** 
 	 * Constructor
@@ -39,13 +42,7 @@ public class Zug extends Schienenfahrzeug {
 		this.addSchiennfahrzeug(lokomotive);
 	}
 	
-	
-	/** 
-	 * HashSet to store elements of type Lokomotive and Wagon or Zug (elements not sorted/ordered) 
-	 */
-	private HashSet<Schienenfahrzeug> liste = new HashSet<Schienenfahrzeug>();
-	
-	
+
 	/**
 	 * Methods to add / remove elements of train.
 	 * Exceptions if train-element already in use or not part of train
@@ -55,7 +52,6 @@ public class Zug extends Schienenfahrzeug {
 	 * - "Lokomotive"
 	 * - "Zug" 
 	 * 
-	 * @param fahrzeug
 	 */
 	
 	// function to check existence of Schienenfahrzeug in HashSet
@@ -192,7 +188,7 @@ public class Zug extends Schienenfahrzeug {
 		if(zugkraft > maxgewicht) {
 			canPull = true;
 		} else {
-			System.out.println("Gesamte Zugkraft: " + zugkraft + ", Gesamtgewicht: " + maxgewicht);
+			System.out.println("Gesamte Zugkraft: " + zugkraft + ", maximale Zuladung: " + maxgewicht);
 		}
 		return canPull;
 	}

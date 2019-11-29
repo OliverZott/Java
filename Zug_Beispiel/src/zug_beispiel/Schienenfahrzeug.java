@@ -1,8 +1,10 @@
 package zug_beispiel;
 
-/** Abstract class to generalize classes "Wagon" and "Lokomotive"
+/** Abstract class to generalize classes "Wagon" and "Lokomotive" (and "Zug" for composition)
  * 
  * Provides basic attributes, constructor, setters&getters
+ * 
+ * Basic idea: Train as composition of locomotives, wagons and other trains. 
  * 
  * @author Oliver Zott
  * @version 1.1 

@@ -15,8 +15,9 @@ import java.util.Arrays;
 public class Avg1 {
 	
 	
-	// average-function
+	// function to calculate average of double-values
 	static double avg( double[] array) {
+		
 		double sum = 0;
 		
 		if ( array == null || array.length == 0 ) {
@@ -30,7 +31,6 @@ public class Avg1 {
 	}
 	
 	
-	// Main
 	public static void main ( String[] args ) {
 		double[] numbers0 = {};		// test for exception
 		double[] numbers = {2, 3, 4};

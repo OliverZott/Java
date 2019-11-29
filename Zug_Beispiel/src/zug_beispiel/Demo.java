@@ -13,7 +13,7 @@ public class Demo {
 		
 		// create elements of train
 		Lokomotive lok1 = new Lokomotive(45, 7, "typ_lok1982", "Kawasaki", 1982, "sn123", 3, 10, 50000); 
-		Lokomotive lok2 = new Lokomotive(53, 8, "typ_lok2000", "Siemens", 2000, "sn3246b", 0, 12, 70000);
+		Lokomotive lok2 = new Lokomotive(53, 8, "typ_lok2000", "Siemens", 2000, "sn123", 0, 12, 70000); //sn3246b
 		Lokomotive lok3 = new Lokomotive(48, 3, "typ_lok2016", "GE", 2016, "sn1lo6b", 3, 11, 30000);
 		
 		Wagon wag1 = new Wagon(17, 6, "typ_wag1974", "Alstom", 1974, "sn24alstom", 50, 4200);
@@ -24,7 +24,7 @@ public class Demo {
 		Zug zug1 = new Zug(lok1);
 		Zug zug2 = new Zug(lok2);
 		Zug zug3 = new Zug(lok3);
-		
+				
 		// add elements to train
 		zug1.addSchiennfahrzeug(wag1);
 		zug1.addSchiennfahrzeug(wag2);
@@ -32,6 +32,7 @@ public class Demo {
 		zug3.addSchiennfahrzeug(zug1);
 		zug3.addSchiennfahrzeug(zug2);
 
+		
 		// print trains
 		zug1.printZug();
 		System.out.println();
@@ -39,9 +40,7 @@ public class Demo {
 		System.out.println();
 		zug3.printZug();
 		System.out.println();
-		
 
-		
 		zug1.delSchienenfahrzeug(wag1);
 		zug1.printZug();
 		System.out.println("");
@@ -58,6 +57,7 @@ public class Demo {
 		System.out.println("Schaffner anzahl: " + zug3.getSchaffner_max());
 		System.out.println("");
 
+		
 		// Example for exception handling
 		zug3.delSchienenfahrzeug(wag1);
 

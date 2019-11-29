@@ -2,7 +2,7 @@ package zug_beispiel;
 
 /** Class Wagon inherits from abstract class "Schienenfahrzeug"
  * 
- * attribute + setter/getter for types (Personenwagen, Schlafwagen,...)
+ * (overrides abstract methods from parent-class "Schienenfahrzeug")
  * 
  * @author Oliver Zott
  * @version 1.1

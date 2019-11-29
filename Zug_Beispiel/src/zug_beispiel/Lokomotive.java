@@ -2,8 +2,8 @@ package zug_beispiel;
 
 /** Class Lokomotive inherits from abstract class "Schienenfahrzeug"
  * 
+ * (overrides abstract methods from parent-class "Schienenfahrzeug")
  * Additional attribute "zugkraft"
- * factory method ?! --> setType and getType overwritten by subclasses
  * 
  * @author Oliver Zott
  * @version 1.1

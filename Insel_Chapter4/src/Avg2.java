@@ -8,31 +8,27 @@
 
 public class Avg2 {
 	
+	
 	static double avg( double[] array ) {
-		
 		if ( array == null || array.length == 0 )
 			throw new IllegalArgumentException( "Error: Array null or empty!" );
-		
 		double sum = 0;
-		
 		for  ( double n: array ) {
 			sum += n;
 		}
-		
 		return sum / array.length;
 	}
 	
 	static void avg2() {
-		
 		System.out.println( "Some primes are: ");
 		for ( int prime: new int[] {2, 3, 5, 7, 11, 13, 17} ) {
-			System.out.println( prime);
+			System.out.println(prime);
 		}
 	}
 	
 	static void output() {
 		for ( String str: new String[] {"hallo", "wtf", "supi beispiel"}) {
-			System.out.println(str);
+			System.out.print(str + ", ");
 		}
 	}
 	

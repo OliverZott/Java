@@ -12,21 +12,22 @@ import java.util.Arrays;
 
 public class FivePlayers {
 	
+	
 	public static void main( String[] args ) {
 		
 		Point[] players = new Point[5];
-		
 		
 		// initializing doesn't work with array-for-loop!
 		for ( int i = 0; i < players.length; i++ ) {
 			players[ i ] = new Point( (int)(Math.random()*40), (int)(Math.random()*10));
 		}
 		
-		/* testing:
+		
+		//* testing:
 		for (Point p: players) {
 			System.out.println(p);	
 		}
-		*/
+		//*/
 		
 		// print location:
 		for ( int i = 0; i <= 10; i++ ) {
