@@ -6,10 +6,9 @@
  * @date 04.11.2019
  */
 
-
 package Chapter7_2;
 
-public class GameObject {
+class GameObject {
 	
 	// Attribute
 	private String name;
