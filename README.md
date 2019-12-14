@@ -49,6 +49,11 @@ PlayerData & PlayerFunction	Procedural examples				S.403
 privacy:
 Password					private							S.410
 
+# Chapter 7:
+7.4:
+- override
+- toString
+- final
 
 # Chapter 8:
 
@@ -60,19 +65,3 @@ fileIO						file input-output / null / try-catch / wrapping
 # Design Pattern
 https://www.tutorialspoint.com/design_pattern/index.htm
 MVC							Model View Controller			
-
-
-
-
-
-
-
-
-
-# Übungen:
-------------------------------------------------------------------------------------------
-add ZZZZZnake 				--> erweitern !!!
-
-Andere Beispiele:
-------------------------------------------------------------------------------------------
-scanner (class)			S.386
