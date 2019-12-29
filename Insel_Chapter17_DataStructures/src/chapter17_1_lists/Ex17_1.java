@@ -11,6 +11,10 @@ import java.util.Scanner;
  * The example takes a city as input value and stores it. 
  * Then you have to input the right order of all added cities so far.
  * 
+ * - ArrayList
+ * - .add+
+ * - equalsIgnoreCase
+ * 
  * @author Oliver Zott
  * @version 1.0 (2019.12.02)
  */
