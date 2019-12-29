@@ -1,10 +1,3 @@
-package chapter17_1_lists;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * Chapter 17.1
  * List Example - Methods (page 982-983)
@@ -12,6 +5,15 @@ import java.util.List;
  * @author Oliver Zott
  * @version 1.0 (2019.12.02)
  */
+
+
+package chapter17_1_lists;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class Ex17_2_ListMethods {
 	
