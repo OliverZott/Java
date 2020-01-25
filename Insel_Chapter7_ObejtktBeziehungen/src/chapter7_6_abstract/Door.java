@@ -12,7 +12,7 @@ public class Door extends GameObject {
 	
 	@Override
 	public boolean useOn(GameObject object) {
-		return false;
+		return false;  // so door can't be used on key or other
 	}
 	
 

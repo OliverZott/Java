@@ -13,7 +13,7 @@ public class Game {
 		
 		/**
 		 * Example: Content-addressable memory
-		 * special Syntax to generate sub-class of game ovject
+		 * special Syntax to generate sub-class of game object
 		 * and overwrite the abstract method
 		 * 
 		 * ! ";" at the  end to declare local variable
