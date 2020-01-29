@@ -25,6 +25,7 @@ public class Listing2_CatchNumberFormatException {
 		catch ( NumberFormatException e ) {		
 			// e references exception object (exceptions are objects!)
 			System.err.printf("%s can not be converted to integer! %n", stringToConvert); 	
+			e.printStackTrace();
 			// %n for line break in printf
 		}
 		
