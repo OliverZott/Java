@@ -1,3 +1,14 @@
+/**
+ * Chapter 7.7 - Interfaces 
+ * Example 2 (page 517)
+ * 
+ * - implementing various interfaces
+ * - static-interface methods 
+ * 
+ * @author Oliver Zott
+ * date: 2020-01-28
+ */
+
 package chapter7_7_interfaces2;
 
 import java.io.Serializable;
@@ -34,6 +45,7 @@ public class Playgorund {
 		System.out.println(mag1.compareTo(mag2));
 		System.out.println(mag1.compareTo(mag3));
 		
+		
 		/*	
 		 * calculateSum works with any object implementing Byable interface
 		 */
@@ -48,6 +60,15 @@ public class Playgorund {
 		Arrays.sort(mags);
 		// specific toString method of Arrays
 		System.out.println(Arrays.toString(mags));
+		
+		
+		/*
+		 * Static interface-method
+		 * Only callable with interface-name
+		 */
+		System.out.println(Buyable.isValid(123));
+		//System.out.println(mag_b.isValid(123));
+		//System.out.println(mag1.isValid(123));
 
 	}
 
