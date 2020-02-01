@@ -3,7 +3,8 @@
  * Example 2 (page 517)
  * 
  * - implementing various interfaces
- * - static-interface methods 
+ * - static-interface methods (page 525)
+ * - Default method (page 531)
  * 
  * @author Oliver Zott
  * date: 2020-01-28
@@ -66,9 +67,15 @@ public class Playgorund {
 		 * Static interface-method
 		 * Only callable with interface-name
 		 */
-		System.out.println(Buyable.isValid(123));
+		System.out.println("Buyable.isValid(123): " + Buyable.isValid(123));
 		//System.out.println(mag_b.isValid(123));
 		//System.out.println(mag1.isValid(123));
+		
+		/*
+		 * Default method
+		 * added afterwards, but no compiler-error problems
+		 */
+		System.out.println("mag1.hasPrice(): "+ mag1.hasPrice());
 
 	}
 
