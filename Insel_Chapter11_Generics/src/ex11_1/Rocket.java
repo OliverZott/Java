@@ -10,7 +10,8 @@ package ex11_1;
 public class Rocket<T> {
 	
 	
-	// private object value;	//  most general type of object
+	// private object value;	
+	//  most general type of object
 	private T value;	//  general type of object
 	
 	public Rocket() {}
